@@ -22,11 +22,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      # --- UPDATED SECTIONS BELOW ---
+
       - name: Install dependencies
-        # Creates the environment and installs packages from pyproject.toml or uv.lock
-        run: uv sync --all-extras --dev
+        # This runs 'uv sync --all-extras --dev' defined in your Makefile
+        run: make install
 
       - name: Run Tests
-        # 'uv run' automatically executes the command inside the project's environment
-        run: uv run python -m unittest discover tests
-
+        # This runs 'uv run python -m unittest discover tests' defined in your Makefile
+        run: make test
