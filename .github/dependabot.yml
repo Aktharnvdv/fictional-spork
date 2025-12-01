@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Maintain Python dependencies (pip)
+  # Note: Dependabot does not yet natively support 'uv' lockfiles perfectly,
+  # but it works great with pyproject.toml / requirements.txt
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Optional: Add labels to the PRs it creates
+    labels:
+      - "dependencies"
+      - "automated-pr"
