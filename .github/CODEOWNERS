@@ -1,17 +1,17 @@
 # .github/CODEOWNERS
 
-# Default: @your-username owns everything if no other rule matches
-*       @your-username
+# Default: @Aktharnvdv owns everything if no other rule matches
+*       @Aktharnvdv
 
 # The backend team owns all Python files and the tests folder
-*.py    @your-org/backend-team
-tests/  @your-org/backend-team
+*.py    @Aktharnvdv
+tests/  @Aktharnvdv
 
 # The frontend lead owns all JavaScript/Typescript files
-*.js    @frontend-lead
-*.ts    @frontend-lead
+*.js    @Aktharnvdv
+*.ts    @Aktharnvdv
 
 # DevOps owns the GitHub Actions workflows and Docker files
-.github/workflows/  @devops-lead
-Dockerfile          @devops-lead
-Makefile            @devops-lead
+.github/workflows/  @Aktharnvdv
+Dockerfile          @Aktharnvdv
+Makefile            @Aktharnvdv
